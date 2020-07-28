@@ -1,0 +1,112 @@
+{
+  "categorias": [
+    {
+      "titulo": "Músicas",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Algumas de minhas músicas favoritas!",
+        "url": "#"
+      },
+      "videos": [
+        {
+          "titulo": "November Rain - Guns N' Roses",
+          "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE"
+        },
+        {
+          "titulo": "Comfortably Numb - Pink Floyd",
+          "url": "https://www.youtube.com/watch?v=x-xTttimcNk"
+        },
+        {
+          "titulo": "Geraldo Azevedo - Dia Branco",
+          "url": "https://www.youtube.com/watch?v=uHyGN8QBP8w"
+        },
+        {
+          "titulo": "Alicia Keys - You Don't Know My Name",
+          "url": "https://www.youtube.com/watch?v=1cV6opkXLco"
+        },
+        {
+          "titulo": "Hotel California (Hell Freezes Over Version) - Eagles",
+          "url": "https://www.youtube.com/watch?v=mmpfEoyRG9c"
+        }      
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Alguns de meus filmes favoritos!",
+        "url": "#"
+      },
+      "videos": [
+        {
+          "titulo": "Gladiador, trailer legendado",
+          "url": "https://www.youtube.com/watch?v=2ExwBe4msUw"
+        },
+        {
+          "titulo": "Interestelar, trailer oficial",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Estrada para a Glória, trailer legendado",
+          "url": "https://www.youtube.com/watch?v=uEd69QSBI0s"
+        },
+        {
+          "titulo": "Hardball - O Jogo da Vida, trailer legendado",
+          "url": "https://www.youtube.com/watch?v=gW6WPulcnE0"
+        }  
+      ]
+    },
+    {
+      "titulo": "Séries",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Algumas de minhas séries favoritas!",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "Breaking Bad, trailer oficial",
+          "url": "https://www.youtube.com/watch?v=HhesaQXLuRY"
+        },
+        {
+          "titulo": "Game of Thrones, trailer oficial",
+          "url": "https://www.youtube.com/watch?v=gcTkNV5Vg1E"
+        },
+        {
+          "titulo": "Dark, trailer legendado",
+          "url": "https://www.youtube.com/watch?v=6EhDKaWLJgg"
+        },
+        {
+          "titulo": "Sherlock, trailer legendado",
+          "url": "https://www.youtube.com/watch?v=Orkng7s-GtA"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Alguns de meus jogos favotiros!",
+        "url": "#"
+      },
+      "videos": [
+        {
+          "titulo": "Rogue Legacy",
+          "url": "https://www.youtube.com/watch?v=T0DKxOEikTs"
+        },
+        {
+          "titulo": "Final Fantasy Tactics",
+          "url": "https://www.youtube.com/watch?v=tfPbKVvyWk4"
+        },
+        {
+          "titulo": "The Witcher 3: Wild Hunt",
+          "url": "https://www.youtube.com/watch?v=XHrskkHf958"
+        },
+        {
+          "titulo": "FIFA",
+          "url": "https://www.youtube.com/watch?v=vgQNOIhRsV4"
+        }
+      ]
+    }
+  ]
+}
