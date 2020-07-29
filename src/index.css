@@ -3,6 +3,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary: #DB202C;
   --black: #000000;
@@ -15,10 +21,26 @@
   --backEnd: #00C86F;
 }
 
-html,
 body {
-  margin: 0;
-  padding: 0;
+  --bodyPaddingTopWeb: 94px;
+  --bodyPaddingTopMobile: 40px;
+  padding-top: var(--bodyPaddingTopWeb);
+}
+
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTopWeb));
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-top: var(--bodyPaddingTopMobile);
+  }
+
+  #root {
+    min-height: calc(100vh - var(--bodyPaddingTopMobile));
+  }
 }
 
 a {
