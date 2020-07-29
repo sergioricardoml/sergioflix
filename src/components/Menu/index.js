@@ -9,7 +9,7 @@ function Menu() {
   return (
     <MenuWrapper>
       <Link to="/">
-        <LogoImage class="Logo" src={Logo} alt="Sergioflix logo"/>
+        <LogoImage src={Logo} alt="Sergioflix logo"/>
       </Link>
 
       <Button as={Link} to="/cadastro/video">
