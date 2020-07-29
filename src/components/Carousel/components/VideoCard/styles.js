@@ -12,7 +12,6 @@ export const VideoCardContainer = styled.a`
   text-decoration: none;
   overflow: hidden;
   color: white;
-  padding: 16px;
   cursor: pointer;
   
   position: relative;
@@ -20,13 +19,29 @@ export const VideoCardContainer = styled.a`
   flex: 0 0 298px;
   align-items: flex-end;
 
-  transition: opacity .3s;
+  transition: width .3s;
   &:hover,
   &:focus {
-    opacity: .5;
+    width: calc(298px + 6vw);
+
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   
   &:not(:first-child) {
     margin-left: 20px;
+  }
+
+  & > span {
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
   }
 `;
