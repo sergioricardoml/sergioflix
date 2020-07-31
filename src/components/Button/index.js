@@ -4,9 +4,10 @@ const Button = styled.button`
   outline: none;
   box-sizing: border-box;
   border: 1px solid var(--white);
+  background: transparent;
   border-radius: 4px;
   padding: 16px 24px;
-  
+
   color: var(--white);
   font-size: 16px;
   font-weight: bold;
