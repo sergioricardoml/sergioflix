@@ -4,14 +4,23 @@ import { FooterBase } from './styles';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a href="https://github.com/sergioricardoml">
+        <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="Logo Github" />
+      </a>
+      <a href="https://www.linkedin.com/in/sergioricardolara/">
+        <img src="https://oficinadainteligencia.com.br/wp-content/uploads/2019/04/simple-icon-linkedin-white.png" alt="Logo Linkedin" />
       </a>
       <p>
-        Orgulhosamente criado durante a
+        Desenvolvido por
+        {' '}
+        <a href="https://github.com/sergioricardoml">
+          sergioricardoml
+        </a>
+        {' '}
+        durante a #ImersãoReact da
         {' '}
         <a href="https://www.alura.com.br/">
-          Imersão React da Alura
+          Alura
         </a>
       </p>
     </FooterBase>
