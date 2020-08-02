@@ -2,13 +2,144 @@
   "categorias": [
     {
       "id": 1,
-      "name": "Categoria 1",
-      "color": "#6BD1FF"
+      "title": "Músicas",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "Algumas de minhas músicas favoritas!",
+        "url": "#"
+      }
     },
     {
       "id": 2,
-      "name": "Categoria 2",
-      "color": "#00C86F"
+      "title": "Filmes",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Alguns de meus filmes favoritos!",
+        "url": "#"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Séries",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Algumas de minhas séries favoritas!",
+        "url": "#"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Games",
+      "color": "orange",
+      "link_extra": {
+        "text": "Alguns de meus jogos favoritos!",
+        "url": "#"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "title": "Oi, eu sou o Sérgio. Prazer!",
+      "description": "Aqui você pode conhecer um pouco dos meus gostos pessoais! Um pouco de músicas, filmes, séries e jogos! Projeto realizado durante a semana de Imersão React na Alura.",
+      "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "title": "Comfortably Numb - Pink Floyd",
+      "url": "https://www.youtube.com/watch?v=x-xTttimcNk"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "title": "Geraldo Azevedo - Dia Branco",
+      "url": "https://www.youtube.com/watch?v=uHyGN8QBP8w"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "title": "Alicia Keys - You Don't Know My Name",
+      "url": "https://www.youtube.com/watch?v=1cV6opkXLco"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "title": "Hotel California (Hell Freezes Over Version) - Eagles",
+      "url": "https://www.youtube.com/watch?v=mmpfEoyRG9c"
+    },
+    {
+      "id": 6,
+      "categoriaId": 2,
+      "title": "Gladiador, trailer legendado",
+      "url": "https://www.youtube.com/watch?v=2ExwBe4msUw"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "title": "Interestelar, trailer oficial",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "title": "Estrada para a Glória, trailer legendado",
+      "url": "https://www.youtube.com/watch?v=uEd69QSBI0s"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "title": "Hardball - O Jogo da Vida, trailer legendado",
+      "url": "https://www.youtube.com/watch?v=gW6WPulcnE0"
+    },
+    {
+      "id": 10,
+      "categoriaId": 3,
+      "title": "Breaking Bad, trailer oficial",
+      "url": "https://www.youtube.com/watch?v=HhesaQXLuRY"
+    },
+    {
+      "id": 11,
+      "categoriaId": 3,
+      "title": "Game of Thrones, trailer oficial",
+      "url": "https://www.youtube.com/watch?v=gcTkNV5Vg1E"
+    },
+    {
+      "id": 12,
+      "categoriaId": 3,
+      "title": "Dark, trailer legendado",
+      "url": "https://www.youtube.com/watch?v=6EhDKaWLJgg"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "title": "Sherlock, trailer legendado",
+      "url": "https://www.youtube.com/watch?v=Orkng7s-GtA"
+    },
+    {
+      "id": 14,
+      "categoriaId": 4,
+      "title": "Rogue Legacy",
+      "url": "https://www.youtube.com/watch?v=f53HME2OuI0"
+    },
+    {
+      "id": 15,
+      "categoriaId": 4,
+      "title": "Final Fantasy Tactics",
+      "url": "https://www.youtube.com/watch?v=tfPbKVvyWk4"
+    },
+    {
+      "id": 16,
+      "categoriaId": 4,
+      "title": "The Witcher 3: Wild Hunt",
+      "url": "https://www.youtube.com/watch?v=XHrskkHf958"
+    },
+    {
+      "id": 17,
+      "categoriaId": 4,
+      "title": "FIFA",
+      "url": "https://www.youtube.com/watch?v=vgQNOIhRsV4"
     }
   ]
 }

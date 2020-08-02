@@ -4,7 +4,7 @@ export const BannerMainContainer = styled.section`
   height: 80vh;
   position: relative;
   color: #fff;
-  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
   @media (max-width: 800px) {
@@ -57,7 +57,7 @@ ContentAreaContainer.Item = styled.div`
   width: 50%;
   display: inline-block;
   margin-bottom: 50px;
-  
+
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -109,22 +109,30 @@ export const WatchButton = styled.button`
   box-sizing: border-box;
   outline: none;
   border-radius: 5px;
-  border: 1px solid transparent;
-  border-color: var(--black);
-  
-  background: var(--white);
+  border-color: var(--white);
+
+  background: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  color: var(--black);
-  
+  color: var(--white);
+
   margin: 0 auto;
   padding: 16px 24px;
   display: none;
   cursor: pointer;
   transition: opacity .3s;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   @media (max-width: 800px) {
     display: block;

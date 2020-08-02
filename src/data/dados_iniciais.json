@@ -1,109 +1,109 @@
 {
   "categorias": [
     {
-      "titulo": "Músicas",
-      "cor": "#00C86F",
+      "title": "Músicas",
+      "color": "#00C86F",
       "link_extra": {
         "text": "Algumas de minhas músicas favoritas!",
         "url": "#"
       },
       "videos": [
         {
-          "titulo": "November Rain - Guns N' Roses",
+          "title": "November Rain - Guns N' Roses",
           "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE"
         },
         {
-          "titulo": "Comfortably Numb - Pink Floyd",
+          "title": "Comfortably Numb - Pink Floyd",
           "url": "https://www.youtube.com/watch?v=x-xTttimcNk"
         },
         {
-          "titulo": "Geraldo Azevedo - Dia Branco",
+          "title": "Geraldo Azevedo - Dia Branco",
           "url": "https://www.youtube.com/watch?v=uHyGN8QBP8w"
         },
         {
-          "titulo": "Alicia Keys - You Don't Know My Name",
+          "title": "Alicia Keys - You Don't Know My Name",
           "url": "https://www.youtube.com/watch?v=1cV6opkXLco"
         },
         {
-          "titulo": "Hotel California (Hell Freezes Over Version) - Eagles",
+          "title": "Hotel California (Hell Freezes Over Version) - Eagles",
           "url": "https://www.youtube.com/watch?v=mmpfEoyRG9c"
-        }      
+        }
       ]
     },
     {
-      "titulo": "Filmes",
-      "cor": "#6BD1FF",
+      "title": "Filmes",
+      "color": "#6BD1FF",
       "link_extra": {
         "text": "Alguns de meus filmes favoritos!",
         "url": "#"
       },
       "videos": [
         {
-          "titulo": "Gladiador, trailer legendado",
+          "title": "Gladiador, trailer legendado",
           "url": "https://www.youtube.com/watch?v=2ExwBe4msUw"
         },
         {
-          "titulo": "Interestelar, trailer oficial",
+          "title": "Interestelar, trailer oficial",
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
         {
-          "titulo": "Estrada para a Glória, trailer legendado",
+          "title": "Estrada para a Glória, trailer legendado",
           "url": "https://www.youtube.com/watch?v=uEd69QSBI0s"
         },
         {
-          "titulo": "Hardball - O Jogo da Vida, trailer legendado",
+          "title": "Hardball - O Jogo da Vida, trailer legendado",
           "url": "https://www.youtube.com/watch?v=gW6WPulcnE0"
-        }  
+        }
       ]
     },
     {
-      "titulo": "Séries",
-      "cor": "#9cd33b",
+      "title": "Séries",
+      "color": "#9cd33b",
       "link_extra": {
         "text": "Algumas de minhas séries favoritas!",
         "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
-          "titulo": "Breaking Bad, trailer oficial",
+          "title": "Breaking Bad, trailer oficial",
           "url": "https://www.youtube.com/watch?v=HhesaQXLuRY"
         },
         {
-          "titulo": "Game of Thrones, trailer oficial",
+          "title": "Game of Thrones, trailer oficial",
           "url": "https://www.youtube.com/watch?v=gcTkNV5Vg1E"
         },
         {
-          "titulo": "Dark, trailer legendado",
+          "title": "Dark, trailer legendado",
           "url": "https://www.youtube.com/watch?v=6EhDKaWLJgg"
         },
         {
-          "titulo": "Sherlock, trailer legendado",
+          "title": "Sherlock, trailer legendado",
           "url": "https://www.youtube.com/watch?v=Orkng7s-GtA"
         }
       ]
     },
     {
-      "titulo": "Games",
-      "cor": "orange",
+      "title": "Games",
+      "color": "orange",
       "link_extra": {
         "text": "Alguns de meus jogos favoritos!",
         "url": "#"
       },
       "videos": [
         {
-          "titulo": "Rogue Legacy",
+          "title": "Rogue Legacy",
           "url": "https://www.youtube.com/watch?v=f53HME2OuI0"
         },
         {
-          "titulo": "Final Fantasy Tactics",
+          "title": "Final Fantasy Tactics",
           "url": "https://www.youtube.com/watch?v=tfPbKVvyWk4"
         },
         {
-          "titulo": "The Witcher 3: Wild Hunt",
+          "title": "The Witcher 3: Wild Hunt",
           "url": "https://www.youtube.com/watch?v=XHrskkHf958"
         },
         {
-          "titulo": "FIFA",
+          "title": "FIFA",
           "url": "https://www.youtube.com/watch?v=vgQNOIhRsV4"
         }
       ]

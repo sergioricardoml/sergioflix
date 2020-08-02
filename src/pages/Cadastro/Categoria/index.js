@@ -4,39 +4,27 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const categoryInitialValues = {
-    name: '',
+    title: '',
     description: '',
-    color: '',
+    color: '#000000',
   };
+
+  const { handleChange, values, clearForm } = useForm(categoryInitialValues);
 
   const [categories, setCategories] = useState([]);
-  const [newCategory, setNewCategory] = useState(categoryInitialValues);
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
-    setCategories([...categories, newCategory]);
-    console.log(newCategory);
+    setCategories([...categories, values]);
+    console.log(values);
     console.log(categories);
 
-    setNewCategory(categoryInitialValues);
-  };
-
-  const setValues = (key, value) => {
-    setNewCategory({
-      ...newCategory,
-      [key]: value,
-    });
-  };
-
-  const handleChange = ({ target }) => {
-    setValues(
-      target.getAttribute('name'),
-      target.value,
-    );
-  };
+    clearForm();
+  }
 
   useEffect(() => {
     const URL = window.location.href.includes('localhost')
@@ -57,15 +45,15 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {newCategory.name}
+        {values.title}
       </h1>
 
       <form onSubmit={handleSubmit}>
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="name"
-          value={newCategory.nome}
+          name="title"
+          value={values.title}
           onChange={handleChange}
         />
 
@@ -73,7 +61,7 @@ function CadastroCategoria() {
           label="Descrição"
           type="textarea"
           name="description"
-          value={newCategory.description}
+          value={values.description}
           onChange={handleChange}
         />
 
@@ -81,7 +69,7 @@ function CadastroCategoria() {
           label="Cor"
           type="color"
           name="color"
-          value={newCategory.color}
+          value={values.color}
           onChange={handleChange}
         />
 
@@ -90,19 +78,7 @@ function CadastroCategoria() {
         </Button>
       </form>
 
-      {categories.length === 0 && (
-        <div>Loading...</div>
-      )}
-
-      <ul>
-        {categories.map((category) => (
-          <li key={`${category.name}`}>
-            {category.name}
-          </li>
-        ))}
-      </ul>
-
-      <Link to="/">
+      <Link to="/" style={{ paddingTop: '30px' }}>
         Ir para home
       </Link>
     </PageDefault>

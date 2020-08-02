@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   outline: none;
@@ -34,6 +34,12 @@ const Button = styled.button`
     border-radius: 0;
     border: 0;
     text-align: center;
+
+    width: 100%;
+
+    ${({ displayButton }) => css`
+      display: ${displayButton};
+    `}
   }
 `;
 

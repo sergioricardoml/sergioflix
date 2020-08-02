@@ -1,45 +1,53 @@
-import React from 'react';
-import styled from 'styled-components';
-import Menu from '../../components/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import React, { useState, useEffect } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
-
-const AppWrapper = styled.div`
-  background: var(--grayDark);
-`;
+import PageDefault from '../../components/PageDefault';
+import categoriesRepository from '../../repositories/categories';
 
 function Home() {
+  const [initialData, setinitialData] = useState([]);
+
+  useEffect(() => {
+    categoriesRepository.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        setinitialData(categoriesWithVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
-    <AppWrapper>
-      <Menu />
+    <PageDefault paddingAll={0}>
 
-      <BannerMain
-        videoTitle="Oi, eu sou o Sérgio. Prazer!"
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="Aqui você pode conhecer um pouco dos meus gostos pessoais! Um pouco de músicas, filmes, séries e jogos! Projeto realizado durante a semana de Imersão React na Alura."
-      />
+      {initialData.length === 0 && <div>Loading...</div>}
 
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
+      {initialData.map((category, index) => {
+        if (index === 0) {
+          return (
+            <div key={category.id}>
+              <BannerMain
+                videoTitle={initialData[0].videos[0].title}
+                url={initialData[0].videos[0].url}
+                videoDescription={initialData[0].videos[0].description}
+              />
+              <Carousel
+                ignoreFirstVideo
+                category={initialData[0]}
+              />
+            </div>
+          );
+        }
 
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
+        return (
+          <Carousel
+            key={category.id}
+            category={category}
+          />
+        );
+      })}
 
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />
-
-      <Footer />
-    </AppWrapper>
+    </PageDefault>
   );
 }
 
